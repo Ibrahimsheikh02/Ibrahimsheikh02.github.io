@@ -7,21 +7,27 @@ body {
   }
   
   header {
-    background-color: #50b3a2;
-    color: white;
+    background-color: #bababa;
+    color: rgb(141, 26, 26);
     text-align: center;
-    padding: 1rem;
-  }
-  
+    padding: 1.5rem;
+    text-align: right;
+
+}
+
   nav a {
     margin: 0 15px;
     color: white;
     text-decoration: none;
   }
+  nav a:hover {
+    color: rgb(54, 52, 52);  /* Change the text color */
+    text-decoration: underline;  /* Add an underline */
+  }
   
   main {
     padding: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,8 +35,28 @@ body {
   
   h1 {
     font-size: 2em;
+    font-family: 'Al Nile Bold';
+    text-align: center;
+    color: rgb(57, 57, 57);
   }
   
+  h1.index { 
+    font-size: 2em;
+    font-family: "Al Nile Bold";
+    text-align: center;
+    color: rgb(57, 57, 57);
+  }
+  
+  p.intro { 
+    font-size: 1.5em;
+    font-family: 'Avenir Book';
+    color: rgb(50, 50, 50);
+  }
+  p.brief { 
+    font-size: 1em;
+    font-family: 'Avenir Book';
+    color: rgb(50, 50, 50);
+  }
   p {
     margin-bottom: 20px;
   }
