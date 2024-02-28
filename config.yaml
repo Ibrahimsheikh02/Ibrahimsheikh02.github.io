@@ -228,18 +228,18 @@ params:
     # title: "Custom Name"
     items:
       - job: "Founder"
-        company: "LectureMe"
-        companyUrl: "https://www.lectureme.ai/"
+        company: "Plutarch"
+        companyUrl: "https://www.plutarch.us/"
         date: "April 2023 - present"
         featuredLink:
           enable: false
           name: "View"
-          url: "www.lectureme.ai"
-        content: "I started LectureMe to make education border-less and barrier-free. We hope to safely integrate AI into classrooms and create an inclusive culture.\n\n
+          url: "www.plutarch.us"
+        content: "I started Plutarch to make education border-less and barrier-free. We hope to safely integrate AI into classrooms and create an inclusive culture.\n\n
         The platform fine tunes LLMs to lecture material to provide study plans, practice quizzes, and a chatbot to answer all questions.\n\n
         It is currently under a pilot test phase in Principle of Data Science at New York University\n\n
         Feel free to reach out if this interests you! \n\n
-        Check out the website for more info: lectureme.ai"
+        Check out the website for more info: plutarch.us"
 
       - job: "ICG-Tech Analyst"
         company: "Citigroup"
