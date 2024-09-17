@@ -2,6 +2,7 @@ baseURL: "http://localhost:1313/"
 languageCode: "en-us"
 title: "Ibrahim"
 theme: hugo-profile
+publishDir: docs
 outputs:
   home:
     - "HTML"
@@ -55,7 +56,7 @@ params:
   title: "Personal Site"
   description: Myself
   # staticPath: ""  # The path to serve the static files from
-  favicon: None
+  favicon: "/fav.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -125,8 +126,7 @@ params:
     intro: "Hi, my name is"
     title: "Ibrahim Sheikh"
     subtitle: "and I love to learn about how things work."
-    content: " I'm a senior at New York University pursuing a joint major in Computer Science and Data Science. I am advised by Dr. Lerrel Pinto and Dr. Pascal Wallisch. Outside of work, I enjoy playing soccer, walking with no purpose, 
-    and I'm *trying* to learn the piano"
+    content: " I'm a first year Master's student at Cornell University pursuing Computer Science. Previously, I was at New York University where I double majored in Computer Science and Data Science. I love to turn ideas into reality with code!"
     image: "/myself.jpg"
     bottomImage:
       enable: false
@@ -149,12 +149,18 @@ params:
     # title: "Custom Name"
     index: false
     items:
+        - title: "M.Eng Computer Science "
+        school:
+          name: "Cornell University"
+          url: "https://www.cornell.edu/"
+        date: "Aug 2024 - May 2025"
+
       - title: "B.A Computer Science & Data Science"
         school:
           name: "New York University"
           url: "https://www.nyu.edu/"
         date: "2020 - 2024"
-        GPA: "3.9/4.0"
+        GPA: "3.91/4.0"
         content: |-
           Awards
           - Dean's List (all semesters)
@@ -226,21 +232,30 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Founder"
-        company: "LectureMe"
-        companyUrl: "https://www.lectureme.ai/"
-        date: "April 2023 - present"
+          - job: "Software Engineer"
+        company: "Cornell University"
+        date: "Sept 2024 - present"
+        featuredLink:
+          enable: false
+          name: "View"
+        content: " We are building an AI alternative to Zoom with content clarification, summaries, and suggestions."
+
+
+      - job: "Software Engineer"
+        company: "BuildSpace (YC)"
+        companyUrl: "https://www.plutarch.us/"
+        date: "June 2024 - Aug 2024 (I still work on this)"
         featuredLink:
           enable: false
           name: "View"
           url: "www.lectureme.ai"
-        content: "I started LectureMe to make education border-less and barrier-free. We hope to safely integrate AI into classrooms and create an inclusive culture.\n\n
+        content: "I built Plutarch to make education border-less and barrier-free. We hope to safely integrate AI into classrooms and create an inclusive culture.\n\n
         The platform fine tunes LLMs to lecture material to provide study plans, practice quizzes, and a chatbot to answer all questions.\n\n
         It is currently under a pilot test phase in Principle of Data Science at New York University\n\n
         Feel free to reach out if this interests you! \n\n
-        Check out the website for more info: lectureme.ai"
+        Check out the website for more info: plutarch.us"
 
-      - job: "ICG-Tech Analyst"
+      - job: "Machine Learning Intern"
         company: "Citigroup"
         companyUrl: "https://www.citigroup.com/global"
         date: "June 2023 - Aug 2023"
@@ -252,7 +267,7 @@ params:
           I also helped automate day-to-day tasks and build pipelines to ensure their validity."
 
 
-      - job: "Software Developer"
+      - job: "Software Engineer"
         company: "OCA"
         companyUrl: "https://www.oneconstitutionave.com/"
         date: "Jan 2021 - Dec 2021"
@@ -285,6 +300,17 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+          - title: Music Personality App
+        content: "Built an app where users can find out more about their personalities by rating songs on a scale of 1-7"
+        image: /musicPNG.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "MongoDB"
+          - "Express"
+          - "React"
+          - "Node JS"
       - title: Music Recommender
         content: "In Fox Lab, we had data of over 1,000 participants, each of whom listened to 400 songs. Of those songs, 320 were the same and 80 varied. 
         In this project, I built a model using Singular Value Decomposition and Principle Component Analysis to predict a new user's top three songs 
@@ -292,7 +318,7 @@ params:
         image: /musicPNG.png
         featured:
           name: Demo
-          link: https://musicrecommender-bb9ef21e087f.herokuapp.com/
+          link: https://hugo-profile.netlify.app
         badges:
           - "SVD"
           - "PCA"
