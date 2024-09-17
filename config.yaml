@@ -125,7 +125,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Ibrahim Sheikh"
-    subtitle: "and I love to learn about how things work."
+    subtitle: "and I love to build software."
     content: " I'm a first year Master's student at Cornell University pursuing Computer Science. Previously, I was at New York University where I double majored in Computer Science and Data Science. I love to turn ideas into reality with code!"
     image: "/myself.jpg"
     bottomImage:
@@ -134,7 +134,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: https://drive.google.com/file/d/1TjGpi8raNnA4uODtLw--0h7cQtpUj_FP/view?usp=sharing
+      url: https://drive.google.com/file/d/1fRABXRO2TWY6roUF76lF_vF_qZrELhL3/view?usp=sharing
       download: false
       newPage: false
     socialLinks:
