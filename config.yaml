@@ -3,6 +3,7 @@ languageCode: "en-us"
 title: "Ibrahim"
 theme: hugo-profile
 publishDir: docs
+publishDir: docs
 outputs:
   home:
     - "HTML"
@@ -253,6 +254,7 @@ params:
         The platform fine tunes LLMs to lecture material to provide study plans, practice quizzes, and a chatbot to answer all questions.\n\n
         It is currently under a pilot test phase in Principle of Data Science at New York University\n\n
         Feel free to reach out if this interests you! \n\n
+        Check out the website for more info: plutarch.us"
         Check out the website for more info: plutarch.us"
 
       - job: "Machine Learning Intern"
