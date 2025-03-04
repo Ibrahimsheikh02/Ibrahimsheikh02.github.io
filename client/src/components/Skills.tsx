@@ -220,7 +220,7 @@ const Skills = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {languageIcons.map((lang, i) => (
                   <div key={i} className="flex flex-col items-center p-4 bg-gray-800/50 rounded-xl hover:bg-primary-500/20 transition-colors duration-300">
-                    <FontAwesomeIcon icon={lang.icon} className={`text-4xl ${lang.color} mb-2`} />
+                    <FontAwesomeIcon icon={lang.icon as any} className={`text-4xl ${lang.color} mb-2`} />
                     <span className="text-gray-300">{lang.name}</span>
                   </div>
                 ))}
@@ -234,7 +234,7 @@ const Skills = () => {
                 {focusAreas.map((area, index) => (
                   <div key={index} className="flex items-start gap-4 p-3 bg-gray-800/40 rounded-lg hover:bg-gray-800/70 transition-colors duration-300">
                     <div className="text-primary-500 text-2xl mt-1 min-w-[2rem] flex items-center justify-center">
-                      <FontAwesomeIcon icon={['fas', area.icon]} />
+                      <FontAwesomeIcon icon={['fas', area.icon as any]} />
                     </div>
                     <div>
                       <div className="flex items-center gap-2">

@@ -14,6 +14,7 @@ export interface Project {
     live?: string;
   };
   codeSnippet?: string;
+  awardInfo?: string;
 }
 
 export const projectsData: Project[] = [

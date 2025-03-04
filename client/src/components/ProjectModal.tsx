@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Project } from '@/lib/constants';
-import { useSpring, animated } from '@react-spring/web';
 
 interface ProjectModalProps {
   project: Project;
@@ -11,33 +10,22 @@ interface ProjectModalProps {
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
   
-  const modalAnimation = useSpring({
-    from: { opacity: 0, transform: 'scale(0.95)' },
-    to: { opacity: 1, transform: 'scale(1)' },
-    config: { tension: 300, friction: 20 },
-  });
-
-  const backdropAnimation = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-  });
-
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         onClose();
       }
     };
-
+    
     const handleClickOutside = (event: MouseEvent) => {
       if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
         onClose();
       }
     };
-
+    
     document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('mousedown', handleClickOutside);
-
+    
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
       document.removeEventListener('mousedown', handleClickOutside);
@@ -45,113 +33,133 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   }, [onClose]);
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center">
-      <animated.div 
-        style={backdropAnimation} 
-        className="fixed inset-0 bg-black/70 backdrop-blur-sm"
-        aria-hidden="true"
-      ></animated.div>
-      
-      <animated.div 
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm overflow-y-auto">
+      <div 
         ref={modalRef}
-        style={modalAnimation} 
-        className="relative bg-gray-900 border border-gray-700 rounded-2xl max-w-3xl w-full mx-auto p-6 shadow-xl z-10"
+        className="bg-gray-900 border border-gray-800 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
       >
-        <div className="absolute top-4 right-4">
+        <div className="relative h-64 lg:h-80">
+          <img 
+            src={project.fullImage || project.image} 
+            alt={project.title} 
+            className="w-full h-full object-cover"
+          />
           <button 
             onClick={onClose}
-            className="text-gray-400 hover:text-white transition-colors duration-300"
-            aria-label="Close modal"
+            className="absolute top-4 right-4 bg-black/40 hover:bg-black/60 text-white p-2 rounded-full transition-colors"
           >
-            <FontAwesomeIcon icon={['fas', 'times']} className="text-xl" />
+            <FontAwesomeIcon icon={['fas', 'times' as any]} size="lg" />
           </button>
         </div>
         
-        <div className="space-y-6">
-          <h3 className="text-2xl font-space font-semibold text-white">{project.title}</h3>
-          
-          <div className="aspect-video bg-gray-800 rounded-xl overflow-hidden">
-            <img 
-              src={project.fullImage || project.image} 
-              alt={project.title} 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          
-          <div className="space-y-4">
-            <p className="text-gray-300">
-              {project.description}
-            </p>
-            
-            <h4 className="text-xl font-space font-medium text-white">Key Features</h4>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
-              {project.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
-            
-            <h4 className="text-xl font-space font-medium text-white">Technologies Used</h4>
-            <div className="flex flex-wrap gap-2">
-              {project.technologies.map((tech, index) => {
-                // Assign a color based on index to create variety
-                const colorClasses = [
-                  'bg-blue-500/20 text-blue-300',
-                  'bg-green-500/20 text-green-300',
-                  'bg-purple-500/20 text-purple-300',
-                  'bg-yellow-500/20 text-yellow-300',
-                  'bg-red-500/20 text-red-300',
-                  'bg-pink-500/20 text-pink-300',
-                  'bg-cyan-500/20 text-cyan-300',
-                  'bg-indigo-500/20 text-indigo-300',
-                  'bg-orange-500/20 text-orange-300',
-                ];
-                const colorClass = colorClasses[index % colorClasses.length];
-                
-                return (
-                  <span key={index} className={`px-3 py-1 ${colorClass} rounded-full`}>
-                    {tech}
+        <div className="p-6 lg:p-8">
+          <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
+            <div>
+              <h2 className="text-2xl lg:text-3xl font-bold text-white mb-2">{project.title}</h2>
+              <div className="flex flex-wrap gap-2">
+                {project.badges.map((badge, index) => (
+                  <span 
+                    key={index} 
+                    className="px-3 py-1 bg-primary-500/20 text-primary-300 text-xs font-medium rounded-full"
+                  >
+                    {badge}
                   </span>
-                );
-              })}
+                ))}
+              </div>
             </div>
             
-            {project.codeSnippet && (
-              <>
-                <h4 className="text-xl font-space font-medium text-white">Code Snippet</h4>
-                <pre className="bg-gray-900 rounded-lg p-4 overflow-x-auto">
-                  <code className="language-python text-sm">{project.codeSnippet}</code>
-                </pre>
-              </>
-            )}
-            
-            <div className="flex gap-4 mt-6">
+            <div className="flex gap-3">
               {project.links.github && (
                 <a 
                   href={project.links.github} 
                   target="_blank" 
-                  rel="noreferrer" 
-                  className="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors duration-300 flex items-center gap-2"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors"
                 >
-                  <FontAwesomeIcon icon={['fab', 'github']} />
-                  <span>View on GitHub</span>
+                  <FontAwesomeIcon icon={['fab', 'github' as any]} />
+                  <span>GitHub</span>
                 </a>
               )}
-              
               {project.links.live && (
                 <a 
                   href={project.links.live} 
                   target="_blank" 
-                  rel="noreferrer" 
-                  className="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors duration-300 flex items-center gap-2"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors"
                 >
-                  <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
-                  <span>View Live Demo</span>
+                  <FontAwesomeIcon icon={['fas', 'external-link-alt' as any]} />
+                  <span>Live Demo</span>
                 </a>
               )}
             </div>
           </div>
+          
+          <p className="text-gray-300 mb-8 leading-relaxed">
+            {project.description}
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                <FontAwesomeIcon icon={['fas', 'cogs' as any]} className="text-primary-400" />
+                <span>Technologies Used</span>
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech, index) => (
+                  <span 
+                    key={index} 
+                    className="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-md"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                <FontAwesomeIcon icon={['fas', 'list-ul' as any]} className="text-primary-400" />
+                <span>Key Features</span>
+              </h3>
+              <ul className="space-y-2 text-gray-300">
+                {project.features.map((feature, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-primary-400 mt-1">
+                      <FontAwesomeIcon icon={['fas', 'check-circle' as any]} />
+                    </span>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          
+          {project.codeSnippet && (
+            <div className="mb-8">
+              <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                <FontAwesomeIcon icon={['fas', 'code' as any]} className="text-primary-400" />
+                <span>Code Snippet</span>
+              </h3>
+              <div className="bg-gray-950 rounded-lg p-4 overflow-x-auto">
+                <pre className="text-gray-300 text-sm">
+                  <code>
+                    {project.codeSnippet}
+                  </code>
+                </pre>
+              </div>
+            </div>
+          )}
+          
+          {project.awardInfo && (
+            <div className="bg-primary-900/30 border border-primary-700/30 rounded-lg p-4 mb-4">
+              <div className="flex items-center gap-2 text-primary-300 font-medium">
+                <FontAwesomeIcon icon={['fas', 'award' as any]} />
+                <span>{project.awardInfo}</span>
+              </div>
+            </div>
+          )}
         </div>
-      </animated.div>
+      </div>
     </div>
   );
 };
