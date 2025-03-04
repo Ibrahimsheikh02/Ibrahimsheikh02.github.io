@@ -1,0 +1,38 @@
+Ibrahim Sheikh (646)-595-6075 | ibrahimsheikh02.github.io | mis75@cornell.edu
+EDUCATION
+Cornell University
+M.Eng., Computer Science
+GPA: 3.98/4.00 New York University
+B.A., Computer Science & Data Science GPA: 3.91/4.00 (Magna Cum Laude)
+Software Development Machine Learning Natural Language Processing Adv Data Science
+AWARDS
+Published in Nature (DOI: 10.1038/s42256-024-00953-0)
+Warner Bro Scholarship (Merit-based $20k/year) Teaching Innovation Award (associated with Plutarch) Dean’s Undergraduate Research Fund (Research Grant)
+WORK EXPERIENCE
+Buildspace
+Aug ’24 - May ’25Robotics Linear Algebra
+2020-2024
+      2024
+      2024
+      2024
+      2023
+June ‘24 - Aug ‘24
+Mar ‘22 - May ‘24
+June ‘23 - Aug ‘23
+2024
+2024Software Engineer (www.plutarch.us)
+Trained and evaluated open source models through reinforcement learning Deployed an AI-course tutor at NYU in multiple courses with 500+ users Tech Stack: Flask, JavaScript, LangChain, React, PostgreSQL
+New York University
+Machine Learning Researcher (PI: Dr. Pascal Wallisch)
+Built internal applications using Flask to host three-hour academic study Integrated models to detect facial expressions to increase accuracy by 11% Optimized GPU allocation to train parallel models
+Tech Stack: Python, C++, Matlab, PyTorch
+Citigroup, Inc.
+Software Engineer (Received return offer)
+Built and deployed machine learning models to classify internal app issues and reduce escalation rate from 10% to 3%
+Trained and deployed models like BERT to analyze email sentiment Conducted statistical tests to find patterns in app-related issues
+Tech Stack: Python, C++, AWS, HTML/CSS
+PROJECTS
+Feedback is All You Need
+Analyzed 10,000+ student reviews on lectures to find patterns for improvement Trained models to improve lecture contents’ accessibility and understanding Won first place at NYU Project Expo (2024)
+Music Personality App
+Built web application using MongoDB, Express, React, Node JS Built iOS application for music as therapy to improve mood Recruited and led four engineers to work with me
