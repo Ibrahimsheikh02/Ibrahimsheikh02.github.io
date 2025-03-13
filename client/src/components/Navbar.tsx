@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 py-4 px-4 md:px-8 transition-all duration-300 ${isScrolled ? 'bg-gray-900/90 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <a href="#hero" className="text-2xl font-space font-bold">
-          <span className="text-white">Ibrahim</span><span className="text-primary-500">.Sheikh</span>
+          <span className="text-white">Ibrahim</span><span className="text-primary-500"> Sheikh</span>
         </a>
         
         <div className="hidden md:flex space-x-8">

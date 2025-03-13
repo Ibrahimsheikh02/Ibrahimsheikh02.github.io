@@ -25,30 +25,13 @@ const About = () => {
         <animated.div style={fadeIn} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="space-y-5">
-              <h3 className="text-2xl font-space font-semibold text-white">AI Engineer & Machine Learning Researcher</h3>
+              <h3 className="text-2xl font-space font-semibold text-white">Software Engineer | Vibe Coder</h3>
               <p className="text-gray-300 leading-relaxed">
-                I'm a passion-driven AI engineer with expertise in machine learning, natural language processing, 
-                and software development. With a background in both theoretical research and practical implementation, 
-                I strive to build intelligent systems that can understand and interact with the world in meaningful ways.
-              </p>
-              <p className="text-gray-300 leading-relaxed">
-                I recently completed my Master's degree in Computer Science at Cornell University, specializing in
-                advanced machine learning techniques and their applications. Prior to that, I earned my Bachelor's
-                in Computer Science and Data Science from New York University, where I developed a strong foundation in
-                software engineering and statistical analysis.
-              </p>
-              <p className="text-gray-300 leading-relaxed">
-                My research has been published in top-tier journals, including a recent publication in Nature 
-                (DOI: 10.1038/s42256-024-00953-0), exploring the boundaries of AI capability. I have experience 
-                building complex systems that leverage cutting-edge technologies to solve real-world problems across 
-                domains like healthcare, finance, and education.
+                I'm currently at Cornell University. I've published in Nature, interned at Citi, and I’m soon joining Replit as a software engineer. 
+                I love crafting intelligent systems that push the boundaries of ML, NLP, and software development to solve real-world problems.
               </p>
               
               <div className="flex flex-wrap gap-6 mt-4">
-                <div className="flex items-center gap-2">
-                  <FontAwesomeIcon icon={['fas', 'phone']} className="text-primary-400" />
-                  <span className="text-gray-300">(646)-595-6075</span>
-                </div>
                 <div className="flex items-center gap-2">
                   <FontAwesomeIcon icon={['fas', 'envelope']} className="text-primary-400" />
                   <span className="text-gray-300">mis75@cornell.edu</span>
@@ -73,12 +56,6 @@ const About = () => {
                   alt="Ibrahim Sheikh" 
                   className="w-full h-full object-cover"
                 />
-              </div>
-              <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-gray-900/90 backdrop-blur-sm py-2 px-6 rounded-full border border-gray-800 shadow-lg">
-                <div className="flex items-center space-x-2 text-primary-500">
-                  <span className="text-sm font-medium">Published in Nature</span>
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                </div>
               </div>
             </div>
           </div>

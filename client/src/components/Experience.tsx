@@ -16,32 +16,41 @@ const Experience = () => {
 
   const experiences = [
     {
+      company: "Replit",
+      role: "Incoming Software Engineer",
+      period: "June '25",
+      description: [
+        "Starting as a Software Engineer in June 2025"
+      ],
+      skills: [],
+      logo: "code"
+    },
+    {
+      company: "Cornell University",
+      role: "Researcher",
+      period: "Jan '25 - May '25",
+      description: [
+        "Worked on medsimai.com where students can simulate patient trials"
+      ],
+      skills: [],
+      logo: "university"
+    },
+    {
       company: "Buildspace",
       role: "Software Engineer",
       period: "June '24 - Aug '24",
-      description: [
-        "Working on cutting-edge AI and web3 projects",
-        "Developing and implementing new features for the platform"
-      ],
-      skills: ["React", "Node.js", "AI", "Web3"],
-      logo: "building"
-    },
-    {
-      company: "Plutarch",
-      role: "Software Engineer",
-      period: "Mar '22 - May '24",
       description: [
         "Trained and evaluated open source models through reinforcement learning",
         "Deployed an AI-course tutor at NYU in multiple courses with 500+ users"
       ],
       skills: ["Flask", "JavaScript", "LangChain", "React", "PostgreSQL"],
       link: "www.plutarch.us",
-      logo: "brain"
+      logo: "building"
     },
     {
       company: "New York University",
       role: "Machine Learning Researcher",
-      period: "June '23 - Aug '23",
+      period: "Mar '22 - May '24",
       description: [
         "Built internal applications using Flask to host three-hour academic study",
         "Integrated models to detect facial expressions to increase accuracy by 11%",
@@ -54,7 +63,7 @@ const Experience = () => {
     {
       company: "Citigroup, Inc.",
       role: "Software Engineer",
-      period: "2023",
+      period: "June '23 - Aug '23",
       description: [
         "Built and deployed machine learning models to classify internal app issues and reduce escalation rate from 10% to 3%",
         "Trained and deployed models like BERT to analyze email sentiment",
@@ -104,11 +113,7 @@ const Experience = () => {
                           {exp.link}
                         </a>
                       )}
-                      {exp.pi && (
-                        <div className="text-gray-400 text-sm">
-                          PI: {exp.pi}
-                        </div>
-                      )}
+
                     </div>
                     <div className="h-12 w-12 rounded-lg bg-primary-500/20 text-primary-500 flex items-center justify-center">
                       <FontAwesomeIcon icon={["fas", exp.logo as any]} className="text-2xl" />

@@ -134,21 +134,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             </div>
           </div>
           
-          {project.codeSnippet && (
-            <div className="mb-8">
-              <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                <FontAwesomeIcon icon={['fas', 'code' as any]} className="text-primary-400" />
-                <span>Code Snippet</span>
-              </h3>
-              <div className="bg-gray-950 rounded-lg p-4 overflow-x-auto">
-                <pre className="text-gray-300 text-sm">
-                  <code>
-                    {project.codeSnippet}
-                  </code>
-                </pre>
-              </div>
-            </div>
-          )}
+
           
           {project.awardInfo && (
             <div className="bg-primary-900/30 border border-primary-700/30 rounded-lg p-4 mb-4">

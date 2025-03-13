@@ -153,12 +153,11 @@ const Hero = () => {
             <div className="space-y-2">
               <h2 className="text-lg md:text-xl text-primary-500 font-semibold">Hello, I'm</h2>
               <h1 className="text-4xl md:text-6xl font-bold font-space text-white">Ibrahim Sheikh</h1>
-              <h3 className="text-2xl md:text-3xl font-space text-gray-300">AI Engineer & ML Researcher</h3>
+              <h3 className="text-2xl md:text-3xl font-space text-gray-300">Software Engineer | Researcher</h3>
             </div>
             
             <p className="text-gray-300 text-lg leading-relaxed">
-              Cornell University M.Eng. student with publications in <span className="text-primary-500">Nature</span> 
-              and experience building production-ready AI solutions.
+              Current student at Cornell University with experience building production-ready AI solutions.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-2">
@@ -176,14 +175,14 @@ const Hero = () => {
               <a href="https://github.com/ibrahimsheikh02" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300 text-xl">
                 <FontAwesomeIcon icon={['fab', 'github']} />
               </a>
-              <a href="https://www.linkedin.com/in/ibrahim-sheikh" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300 text-xl">
+              <a href="https://www.linkedin.com/in/ibrahimsheikh02" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300 text-xl">
                 <FontAwesomeIcon icon={['fab', 'linkedin']} />
+              </a>
+              <a href="https://twitter.com/ibrahimshk02" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300 text-xl">
+                <FontAwesomeIcon icon={['fab', 'x-twitter']} />
               </a>
               <a href="mailto:mis75@cornell.edu" className="text-gray-400 hover:text-white transition-colors duration-300 text-xl">
                 <FontAwesomeIcon icon={['fas', 'envelope']} />
-              </a>
-              <a href="tel:+16465956075" className="text-gray-400 hover:text-white transition-colors duration-300 text-xl">
-                <FontAwesomeIcon icon={['fas', 'phone']} />
               </a>
             </div>
           </animated.div>
