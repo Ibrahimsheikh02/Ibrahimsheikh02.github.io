@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:title" content="Ibrahim" />
+<meta property="og:description" content="Myself" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/" /><meta property="og:site_name" content="Personal Site" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ibrahim"/>
+<meta name="twitter:description" content="Myself"/>
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+<meta name="description" content=Myself>
+<link rel="stylesheet" href="/css/index.css" media="all">
+<link rel="stylesheet" href="/css/projects.css" media="all">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+  <title>
+Ibrahim
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;        
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                Ibrahim
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#research_experience"
+                            aria-label="research_experience">
+                            Research
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#volunteer"
+                            aria-label="volunteer">
+                            Volunteer
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+                    
+
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <span class="subtitle">
+                    Hi, my name is
+                </span>
+                <h2>
+                    Ibrahim Sheikh
+                </h2>
+                <h3>
+                    and I love to build software.
+                </h3>
+                <p class="hero-content">
+                    I&rsquo;m a first year Master&rsquo;s student at Cornell University pursuing Computer Science. Previously, I was at New York University where I double majored in Computer Science and Data Science. I love to turn ideas into reality with code!
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                        <a href="https://drive.google.com/file/d/1fRABXRO2TWY6roUF76lF_vF_qZrELhL3/view?usp=sharing" class="btn" ZgotmplZ
+			  >
+                            Resume
+                        </a>
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><span>
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/ibrahimsheikh02/" target="_blank" class="btn social-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </span>
+    
+
+    
+</span></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src="/myself.jpg"
+                            class="img-thumbnail mx-auto"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section id="education" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Education</h3>
+        <div class="row justify-content-center py-5">
+            
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>Aug 2024 - May 2025</small>
+                                </div>
+                                <h5 class="card-title">M.Eng Computer Science </h5>
+                                
+                                
+                                <a href="https://www.cornell.edu/" target="_blank">
+                                    <h6>
+                                    Cornell University
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2020 - 2024</small>
+                                </div>
+                                <h5 class="card-title">B.A Computer Science &amp; Data Science</h5>
+                                
+                                
+                                <a href="https://www.nyu.edu/" target="_blank">
+                                    <h6>
+                                    New York University
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1">
+                                    GPA:
+                                    <i>
+                                        <small>3.91/4.0</small>
+                                    </i> 
+                                </div>
+                                
+                                <div class="py-1 education-content">
+                                    <p>Awards</p>
+<ul>
+<li>Dean&rsquo;s List (all semesters)</li>
+<li>Presidential Honors Scholar</li>
+<li>Dean&rsquo;s Undergraduate Research Fund</li>
+</ul>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="research_experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Research</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link active bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Fox-Lab-March-2022---present-tab'
+                                data-bs-target='#pills-Fox-Lab-March-2022---present'
+                                aria-controls='Fox-Lab-March-2022---present' 
+                            >
+                                Fox Lab
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Grail-Lab-Aug-2023---present-tab'
+                                data-bs-target='#pills-Grail-Lab-Aug-2023---present' 
+                                aria-controls='Grail-Lab-Aug-2023---present'
+                            >
+                                Grail Lab
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Fox-Lab-March-2022---present'
+                            aria-labelledby='pills-Fox-Lab-March-2022---present-tab'
+                        >
+                            <div>
+                                <span class="h4">Research Assistant</span>
+                                <small>-</small>
+                                <a href="https://www.foxlabnyu.com" target="_blank">Fox Lab</a>
+                                <div class="pb-1">
+                                    <small>March 2022 - present</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Working&#32;as&#32;a&#32;Research&#32;Assistant&#32;at&#32;Fox&#32;Lab
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            <p>Advisor: Dr. Pascal Wallisch</p>
+<p>Research Interests: Music Analysis, Music Generation, Music and the Mind</p>
+<p>Publications:</p>
+<ul>
+<li>
+<p>From Plato to Pinker: Measuring the Tastiness of Auditory Cheesecake [First Author] [2023]</p>
+</li>
+<li>
+<p>Muted Affect, Amped-Up Volume: Reduced Music-Evoked Fear Responses in Psychopathy [Co-Author] [2022]</p>
+</li>
+</ul>
+
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Grail-Lab-Aug-2023---present'
+                            aria-labelledby='pills-Grail-Lab-Aug-2023---present-tab'
+                        >
+                            <div>
+                                <span class="h4">Research Assistant</span>
+                                <small>-</small>
+                                <a href="https://www.lerrelpinto.com" target="_blank">Grail Lab</a>
+                                
+                                <div class="pb-1">
+                                    <small>Aug 2023 - present</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Research&#32;Assistant&#32;at&#32;Grail&#32;Lab
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Advisor: Dr. Lerrel Pinto</p>
+<p>Research Interests: Robotics, Reinforcement Learning, Imitation Learning, Large Vision Models</p>
+
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Experience</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link active bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Cornell-University-Sept-2024---present-tab'
+                                data-bs-target='#pills-Cornell-University-Sept-2024---present'
+                                aria-controls='Cornell-University-Sept-2024---present' 
+                            >
+                                Cornell University
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='BuildSpace-(YC)-June-2024---Aug-2024-(I-still-work-on-this)-tab'
+                                data-bs-target='#pills-BuildSpace-(YC)-June-2024---Aug-2024-(I-still-work-on-this)' 
+                                aria-controls='BuildSpace-(YC)-June-2024---Aug-2024-(I-still-work-on-this)'
+                            >
+                                BuildSpace (YC)
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Citigroup-June-2023---Aug-2023-tab'
+                                data-bs-target='#pills-Citigroup-June-2023---Aug-2023' 
+                                aria-controls='Citigroup-June-2023---Aug-2023'
+                            >
+                                Citigroup
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='OCA-Jan-2021---Dec-2021-tab'
+                                data-bs-target='#pills-OCA-Jan-2021---Dec-2021' 
+                                aria-controls='OCA-Jan-2021---Dec-2021'
+                            >
+                                OCA
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='New-York-University-Nov-21---Feb-2022-tab'
+                                data-bs-target='#pills-New-York-University-Nov-21---Feb-2022' 
+                                aria-controls='New-York-University-Nov-21---Feb-2022'
+                            >
+                                New York University
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Cornell-University-Sept-2024---present'
+                            aria-labelledby='pills-Cornell-University-Sept-2024---present-tab'
+                        >
+                            <div>
+                                <span class="h4">Software Engineer</span>
+                                <small>-</small>
+                                <a href="" target="_blank">Cornell University</a>
+                                <div class="pb-1">
+                                    <small>Sept 2024 - present</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Working&#32;as&#32;a&#32;Software&#32;Engineer&#32;at&#32;Cornell&#32;University
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            We are building an AI alternative to Zoom with content clarification, summaries, and suggestions.
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-BuildSpace-(YC)-June-2024---Aug-2024-(I-still-work-on-this)'
+                            aria-labelledby='pills-BuildSpace-(YC)-June-2024---Aug-2024-(I-still-work-on-this)-tab'
+                        >
+                            <div>
+                                <span class="h4">Software Engineer</span>
+                                <small>-</small>
+                                <a href="https://www.plutarch.us/" target="_blank">BuildSpace (YC)</a>
+                                
+                                <div class="pb-1">
+                                    <small>June 2024 - Aug 2024 (I still work on this)</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Software&#32;Engineer&#32;at&#32;BuildSpace&#32;(YC)
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>I built Plutarch to make education border-less and barrier-free. We hope to safely integrate AI into classrooms and create an inclusive culture.</p>
+<p>The platform fine tunes LLMs to lecture material to provide study plans, practice quizzes, and a chatbot to answer all questions.</p>
+<p>It is currently under a pilot test phase in Principle of Data Science at New York University</p>
+<p>Feel free to reach out if this interests you!</p>
+<p>Check out the website for more info: plutarch.us</p>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Citigroup-June-2023---Aug-2023'
+                            aria-labelledby='pills-Citigroup-June-2023---Aug-2023-tab'
+                        >
+                            <div>
+                                <span class="h4">Machine Learning Intern</span>
+                                <small>-</small>
+                                <a href="https://www.citigroup.com/global" target="_blank">Citigroup</a>
+                                
+                                <div class="pb-1">
+                                    <small>June 2023 - Aug 2023</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Machine&#32;Learning&#32;Intern&#32;at&#32;Citigroup
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>At Citi, I worked with the applications support team and machine learning team. We designed, built, and deployed Machine Learning algorithms that track app related issues.</p>
+<p>I also helped automate day-to-day tasks and build pipelines to ensure their validity.</p>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-OCA-Jan-2021---Dec-2021'
+                            aria-labelledby='pills-OCA-Jan-2021---Dec-2021-tab'
+                        >
+                            <div>
+                                <span class="h4">Software Engineer</span>
+                                <small>-</small>
+                                <a href="https://www.oneconstitutionave.com/" target="_blank">OCA</a>
+                                
+                                <div class="pb-1">
+                                    <small>Jan 2021 - Dec 2021</small>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Identified consumer base of real-estate projects by analyzing data of existing consumers and assisted in building models to create effective and efficient campaigns</p>
+<p>Helped develop the website oneconstitutionave.com and created a multipurpose user portal for all existing customers</p>
+<p>Generated marketing leads through website, social media, and that led to the sale of inventory worth over $420,000</p>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-New-York-University-Nov-21---Feb-2022'
+                            aria-labelledby='pills-New-York-University-Nov-21---Feb-2022-tab'
+                        >
+                            <div>
+                                <span class="h4">Student Fundraiser</span>
+                                <small>-</small>
+                                <a href="https://example.com" target="_blank">New York University</a>
+                                
+                                <div class="pb-1">
+                                    <small>Nov 21 - Feb 2022</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Student&#32;Fundraiser&#32;at&#32;New&#32;York&#32;University
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>As a student fundraiser, I communicated with alumni, parents, and others to raise funds to support university-based scholarships, research, and student programming.</p>
+<p>I had the oppurtunity to network with alumni to build relationships and take guidance from their achievements and experience.</p>
+
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Music Personality App">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/musicPNG.png" alt="Music Personality App">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">MongoDB</span>
+                            
+                            <span class="badge badge-secondary">Express</span>
+                            
+                            <span class="badge badge-secondary">React</span>
+                            
+                            <span class="badge badge-secondary">Node JS</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Music Personality App</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Built an app where users can find out more about their personalities by rating songs on a scale of 1-7
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://hugo-profile.netlify.app" target="_blank">
+                                Demo
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Music Recommender">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/musicPNG.png" alt="Music Recommender">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">SVD</span>
+                            
+                            <span class="badge badge-secondary">PCA</span>
+                            
+                            <span class="badge badge-secondary">Streamlit</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Music Recommender</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            In Fox Lab, we had data of over 1,000 participants, each of whom listened to 400 songs. Of those songs, 320 were the same and 80 varied. In this project, I built a model using Singular Value Decomposition and Principle Component Analysis to predict a new user&#39;s top three songs using only five songs. The ratings vary from a scale of 1 (hate it) to 7 (love it). You can give it a go! 
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://hugo-profile.netlify.app" target="_blank">
+                                Demo
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Feedback Is All You Need">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/LectureClipArt.jpeg" alt="Feedback Is All You Need">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">NLP</span>
+                            
+                            <span class="badge badge-secondary">Matplotlib</span>
+                            
+                            <span class="badge badge-secondary">SVM</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Feedback Is All You Need</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Over the past three years, Dr. Pascal Wallisch has asked students to give feedback after every week or every lecture. In this analysis, I analyzed over 10,000 student responses varying across three years (six semesters) to find trends. Our goal was to find out what works and what does not. I also fit a SVC model to predict whether based on previous weeks, we could predict if a student would find a week later in the semester &#39;confusing&#39; and our model was 84% accurate.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://drive.google.com/file/d/1xxQfKA9bcl5dR6cMICDqJZA0lIYqM7o5/view?usp=sharing" target="_blank">
+                                View Presentation
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Virtual Piano">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/piano_4.png" alt="Virtual Piano">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Javascipt</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Virtual Piano</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            I have always wanted to learn to play the piano because of my all time favorite song &#39;A Thousand Years&#39; by Christina Perri. I noticed that a lot of others wanted to as well but pianos can be very expensive! So I built this virtual piano which you can play with the keyboard. Unfortunately, it&#39;s only one octave but give it a go!
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Ibrahimsheikh02/VirtualPiano" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section id="volunteer" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Volunteer</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link active bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Safiya-Homes-May-2020---present-tab'
+                                data-bs-target='#pills-Safiya-Homes-May-2020---present'
+                                aria-controls='Safiya-Homes-May-2020---present' 
+                            >
+                                Safiya Homes
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='The-City-Tutors-March-2023---present-tab'
+                                data-bs-target='#pills-The-City-Tutors-March-2023---present' 
+                                aria-controls='The-City-Tutors-March-2023---present'
+                            >
+                                The City Tutors
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Safiya-Homes-May-2020---present'
+                            aria-labelledby='pills-Safiya-Homes-May-2020---present-tab'
+                        >
+                            <div>
+                                <span class="h4">Volunteer</span>
+                                <small>-</small>
+                                <a href="" target="_blank">Safiya Homes</a>
+                                <div class="pb-1">
+                                    <small>May 2020 - present</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Working&#32;as&#32;a&#32;Volunteer&#32;at&#32;Safiya&#32;Homes
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            <p>Safiya Homes is a co-ed school in Faisalabad, Pakistan.</p>
+<p>This school provides free of cost education to young underpriveleged children. It was inaugrated in December 2020 and has more than doubled its enrollment count.</p>
+<p>As of August 2023, we are helping to expand the school further as we have received donations to acquire more land.</p>
+<p>If you are interested in this or would like to know more, please reach out</p>
+
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-The-City-Tutors-March-2023---present'
+                            aria-labelledby='pills-The-City-Tutors-March-2023---present-tab'
+                        >
+                            <div>
+                                <span class="h4">Volunteer</span>
+                                <small>-</small>
+                                <a href="https://www.thecitytutors.org/" target="_blank">The City Tutors</a>
+                                
+                                <div class="pb-1">
+                                    <small>March 2023 - present</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Volunteer&#32;at&#32;The&#32;City&#32;Tutors
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>The City Tutors is a volunteering, mentoring, and tutoring organization where students around New York City can participate.</p>
+<p>I have had the pleasure to serve as a panelist, and tutor for this organization. We help students with Math, English, and other subjects.</p>
+<p>Learn more at: thecitytutors.org</p>
+
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Get in Touch</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-md-5">
+                <div class="col-md-8 py-3">
+                    <div class="text-center">
+                        Feel free to reach out to me!
+                    </div>
+                    
+                    <div class="text-center pt-3">
+                        <a href="mailto:mis9351@nyu.edu" class="btn">
+                            Mail me
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-status"></div>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <div class="pb-2">
+                <a href="http://localhost:1313/" title="Ibrahim">
+                    <img alt="Footer logo" src="/fav.png"
+                        height="40px" width="40px">
+                </a>
+            </div>
+            &copy; 2024  All Rights Reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

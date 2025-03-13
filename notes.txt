@@ -1,0 +1,4 @@
+To run this: 
+1) make changes 
+2) run "hugo"
+3) Deploy to github

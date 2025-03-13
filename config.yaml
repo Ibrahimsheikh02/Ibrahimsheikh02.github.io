@@ -1,0 +1,410 @@
+baseURL: "http://localhost:1313/"
+languageCode: "en-us"
+title: "Ibrahim"
+theme: hugo-profile
+publishDir: docs
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+#   main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blogs
+#       weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Personal Site"
+  description: Myself
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: true
+    defaultTheme: "dark" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+#color preference
+    color:
+        textColor: "#fefec"
+        secondaryTextColor: "#333333"
+        backgroundColor: "#333333"
+        secondaryBackgroundColor: "#333333"
+        primaryColor: "#345D49"
+        secondaryColor: "#333333"
+    
+#     darkmode:
+#        textColor: #333333
+#        secondaryTextColor: #333333
+#        backgroundColor: #333333
+#        secondaryBackgroundColor: #333333
+#        primaryColor: #333333
+#        secondaryColor: #333333
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Ibrahim" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Ibrahim Sheikh"
+    subtitle: "and I love to build software."
+    content: " I'm a first year Master's student at Cornell University pursuing Computer Science. Previously, I was at New York University where I double majored in Computer Science and Data Science. I love to turn ideas into reality with code!"
+    image: "/myself.jpg"
+    bottomImage:
+      enable: false
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: https://drive.google.com/file/d/1fRABXRO2TWY6roUF76lF_vF_qZrELhL3/view?usp=sharing
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/ibrahimsheikh02/
+
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "M.Eng Computer Science "
+        school:
+          name: "Cornell University"
+          url: "https://www.cornell.edu/"
+        date: "Aug 2024 - May 2025"
+
+      - title: "B.A Computer Science & Data Science"
+        school:
+          name: "New York University"
+          url: "https://www.nyu.edu/"
+        date: "2020 - 2024"
+        GPA: "3.91/4.0"
+        content: |-
+          Awards
+          - Dean's List (all semesters)
+          - Presidential Honors Scholar
+          - Dean's Undergraduate Research Fund
+
+  # Research Experience
+  research_experience:
+    enable: true
+    title: "Research"
+    items:
+      - job: "Research Assistant"
+        company: "Fox Lab"
+        companyUrl: "https://www.foxlabnyu.com"
+        date: "March 2022 - present"
+        content: "
+        Advisor: Dr. Pascal Wallisch\n\n
+        Research Interests: Music Analysis, Music Generation, Music and the Mind\n\n
+        Publications:\n\n
+        - From Plato to Pinker: Measuring the Tastiness of Auditory Cheesecake [First Author] [2023]\n\n
+        - Muted Affect, Amped-Up Volume: Reduced Music-Evoked Fear Responses in Psychopathy [Co-Author] [2022]
+
+        
+        
+        "
+
+
+      - job: "Research Assistant"
+        company: "Grail Lab"
+        companyUrl: "https://www.lerrelpinto.com"
+        date: "Aug 2023 - present"
+        content: "
+        Advisor: Dr. Lerrel Pinto\n\n
+        Research Interests: Robotics, Reinforcement Learning, Imitation Learning, Large Vision Models
+
+
+        "
+        
+
+
+  volunteer:
+    enable: true
+    title: "Volunteer"
+    items:
+      - job: "Volunteer"
+        company: "Safiya Homes"
+        companyUrl:
+        date: "May 2020 - present"
+        content: "
+        Safiya Homes is a co-ed school in Faisalabad, Pakistan. \n\n
+        This school provides free of cost education to young underpriveleged children. It was inaugrated in December 2020 and has more than doubled its enrollment count. \n\n
+        As of August 2023, we are helping to expand the school further as we have received donations to acquire more land. \n\n
+        If you are interested in this or would like to know more, please reach out
+        "
+      - job: "Volunteer"
+        company: "The City Tutors"
+        companyUrl: https://www.thecitytutors.org/
+        date: "March 2023 - present"
+        content: "
+        The City Tutors is a volunteering, mentoring, and tutoring organization where students around New York City can participate. \n\n
+        I have had the pleasure to serve as a panelist, and tutor for this organization. We help students with Math, English, and other subjects. \n\n
+        Learn more at: thecitytutors.org
+        "
+      
+
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Software Engineer"
+        company: "Cornell University"
+        date: "Sept 2024 - present"
+        featuredLink:
+          enable: false
+          name: "View"
+        content: " We are building an AI alternative to Zoom with content clarification, summaries, and suggestions."
+
+
+      - job: "Software Engineer"
+        company: "BuildSpace (YC)"
+        companyUrl: "https://www.plutarch.us/"
+        date: "June 2024 - Aug 2024 (I still work on this)"
+        featuredLink:
+          enable: false
+          name: "View"
+          url: "www.lectureme.ai"
+        content: "I built Plutarch to make education border-less and barrier-free. We hope to safely integrate AI into classrooms and create an inclusive culture.\n\n
+        The platform fine tunes LLMs to lecture material to provide study plans, practice quizzes, and a chatbot to answer all questions.\n\n
+        It is currently under a pilot test phase in Principle of Data Science at New York University\n\n
+        Feel free to reach out if this interests you! \n\n
+        Check out the website for more info: plutarch.us"
+
+      - job: "Machine Learning Intern"
+        company: "Citigroup"
+        companyUrl: "https://www.citigroup.com/global"
+        date: "June 2023 - Aug 2023"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content:
+              "At Citi, I worked with the applications support team and machine learning team. We designed, built, and deployed Machine Learning algorithms that track app related issues. \n\n
+          I also helped automate day-to-day tasks and build pipelines to ensure their validity."
+
+
+      - job: "Software Engineer"
+        company: "OCA"
+        companyUrl: "https://www.oneconstitutionave.com/"
+        date: "Jan 2021 - Dec 2021"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: "
+        Identified consumer base of real-estate projects by analyzing data of existing consumers and assisted in building models to create effective and efficient campaigns\n\n
+        Helped develop the website oneconstitutionave.com and created a multipurpose user portal for all existing customers\n\n
+        Generated marketing leads through website, social media, and that led to the sale of inventory worth over $420,000"
+
+      - job: "Student Fundraiser"
+        company: "New York University"
+        companyUrl: "https://example.com"
+        date: "Nov 21 - Feb 2022"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: "
+        As a student fundraiser, I communicated with alumni, parents, and others to raise funds to support university-based scholarships, research, and student programming.\n\n
+        I had the oppurtunity to network with alumni to build relationships and take guidance from their achievements and experience."
+    
+        
+          
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Music Personality App
+        content: "Built an app where users can find out more about their personalities by rating songs on a scale of 1-7"
+        image: /musicPNG.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "MongoDB"
+          - "Express"
+          - "React"
+          - "Node JS"
+      - title: Music Recommender
+        content: "In Fox Lab, we had data of over 1,000 participants, each of whom listened to 400 songs. Of those songs, 320 were the same and 80 varied. 
+        In this project, I built a model using Singular Value Decomposition and Principle Component Analysis to predict a new user's top three songs 
+        using only five songs. The ratings vary from a scale of 1 (hate it) to 7 (love it). You can give it a go! "
+        image: /musicPNG.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "SVD"
+          - "PCA"
+          - "Streamlit"
+
+
+      - title: Feedback Is All You Need
+        content: "Over the past three years, Dr. Pascal Wallisch has asked students to give feedback after every week or every lecture. 
+        In this analysis, I analyzed over 10,000 student responses varying across three years (six semesters) to find trends. Our goal was
+        to find out what works and what does not. I also fit a SVC model to predict whether based on previous weeks, we could predict if a student
+        would find a week later in the semester 'confusing' and our model was 84% accurate."
+        image: /LectureClipArt.jpeg
+        featured:
+          name: View Presentation
+          link: https://drive.google.com/file/d/1xxQfKA9bcl5dR6cMICDqJZA0lIYqM7o5/view?usp=sharing
+        badges:
+          - "NLP"
+          - "Matplotlib"
+          - "SVM"
+
+
+
+      - title: Virtual Piano
+        content: "I have always wanted to learn to play the piano because of my all time favorite song 'A Thousand Years' by Christina Perri. 
+        I noticed that a lot of others wanted to as well but pianos can be very expensive! So I built this virtual piano which you can play
+        with the keyboard. Unfortunately, it's only one octave but give it a go!"
+        image: /piano_4.png
+
+        badges:
+          - "Javascipt"
+          - "Python"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Ibrahimsheikh02/VirtualPiano
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Feel free to reach out to me!
+    email: mis9351@nyu.edu
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+#
+#  footer:
+#    recentPosts:
+#      path: "blogs"
+#      count: 3
+#      title: Recent Posts
+#      enable: true
+#      disableFeaturedImage: false
+#    socialNetworks:
+#      github: https://github.com
+#      linkedin: https://linkedin.com
+#      twitter: https://twitter.com
+#      instagram: https://instagram.com
+#      facebook: https://facebook.com
+#
+#  # List pages like blogs and posts
+#  listPages:
+#    disableFeaturedImage: false
+#
+#  # Single pages like blog and post
+#  singlePages:
+#    readTime:
+#      enable: true
+#      content: "min read"
+#    scrollprogress:
+#      enable: true
+#
+#  # For translations
+#  terms:
+#    read: "Read"
+#    toc: "Table Of Contents"
+#    copyright: "All rights reserved"
+#    pageNotFound: "Page not found"
+#    emailText: "Check out this site"
+#
+#  datesFormat:
+#    article: "Jan 2, 2006"
+#    articleList: "Jan 2, 2006"
+#    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
